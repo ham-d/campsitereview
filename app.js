@@ -25,7 +25,7 @@ mongoose.connect(process.env.DATABASEURL);
 
 //using bodyParser to make data readable/static to connect public folder
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/pub"));
 app.use(methodOverride("_method"));
 //flash requires a session of any sort(we are using express-session)
 app.use(flash());
