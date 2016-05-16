@@ -34,7 +34,7 @@ app.set("view engine", "ejs");
 
 //PASSPORT CONFIG
 app.use(require("express-session")({
-    secret: "secret is the key to hashing!.",
+    secret: process.env.SECRETVAR,
     resave: false,
     saveUninitialized: false
 }));
