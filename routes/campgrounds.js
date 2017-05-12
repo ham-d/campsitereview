@@ -12,7 +12,7 @@ router.get("/", function(req, res){
             console.log(err);
         } else {
            //1st campgrounds is the name for .ejs file, 2nd campgrounds is data we're passing in
-           res.render("campgrounds/index.ejs", {campgrounds: allCampgrounds});
+           res.render("campgrounds/index.ejs", {campgrounds: allCampgrounds, page: 'campgrounds'});
         }
     });
 });

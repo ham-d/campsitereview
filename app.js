@@ -34,7 +34,7 @@ app.set("view engine", "ejs");
 
 //PASSPORT CONFIG
 app.use(require("express-session")({
-    secret: process.env.SECRETVAR,
+    secret: 'cats are awesome',
     resave: false,
     saveUninitialized: false
 }));
